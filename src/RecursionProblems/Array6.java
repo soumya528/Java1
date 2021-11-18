@@ -15,19 +15,19 @@ public class Array6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int arr[]=new int[n];
+        int[] arr=new int[n];
         for(int i=0;i<n;i++)
             arr[i]=sc.nextInt();
         System.out.println(array6(arr,0));
     }
 
-    public static boolean array6(int[] nums, int index) {
-        if (index >= nums.length)
+    public static boolean array6(int[] numbs, int index) {
+        if (index >= numbs.length)
             return false;
-        if(nums[index]==6)
+        if(numbs[index]==6)
             return true;
         else
-            return array6(nums,index+1);  // Time Complexity O(n);
+            return array6(numbs,index+1);  // Time Complexity O(n);
 
     }
 }

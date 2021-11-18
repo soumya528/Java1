@@ -20,7 +20,7 @@ public class Counthi {
     {
         if(str.length()<2)
             return 0;
-        if(str.substring(0,2).equals("hi"))
+        if(str.startsWith("hi"))
             return 1+counthi(str.substring(1));  //Complexity O(n)
         else
             return counthi(str.substring(1));

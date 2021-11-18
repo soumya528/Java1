@@ -20,7 +20,7 @@ public class ChangePI {
     {
         if(str.length()<=1)
             return str;
-        if(str.substring(0,2).equals("pi"))
+        if(str.startsWith("pi"))
             return "3.14"+changePI(str.substring(2));  //Complexity O(n)
         else
             return str.charAt(0)+changePI(str.substring(1));
